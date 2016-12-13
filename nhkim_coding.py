@@ -51,9 +51,36 @@ print(a)
 del(a)
 del(b)
 print(a)
-'''
+
 x=3
 y=2
 print(x>y)
 
 print('a' in ('a','b','c'))
+'''
+'''
+함수
+def 함수명(입력인수):
+    수행할 문장1
+    수행할 문장2
+
+
+for i in range(10):
+    print(i,end=' ')
+
+'''
+'''
+f = open("C:/pytest/jumptopython/file.txt",'w')
+for i in range(1,11):
+    data = "%d번째 줄입니다.\n" % i
+    f.write(data)
+f.close()
+'''
+
+f=open("C:/pytest/jumptopython/file.txt",'r')
+while True:
+    line=f.readline()
+    if not line: break
+    print(line)
+f.close()
+
